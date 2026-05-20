@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jaya Electricals Quotation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'DM Sans',sans-serif;
+
+  background:
+  linear-gradient(
+    135deg,
+    #0f172a,
+    #111827,
+    #1e293b
+  );
+
+  min-height:100vh;
+  padding:20px;
+
+  color:white;
+}
+
+.quote-table-section{
+  max-width:850px;
+  margin:auto;
+}
+
+.section-intro{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.section-intro h2{
+  font-size:48px;
+  color:white;
+  letter-spacing:2px;
+}
+
+.section-intro p{
+  color:#cbd5e1;
+  margin-top:10px;
+}
+
+.items-wrap{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.q-item{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:20px;
+
+  border-radius:24px;
+
+  background:rgba(255,255,255,0.08);
+
+  backdrop-filter:blur(16px);
+
+  border:1px solid rgba(255,255,255,0.1);
+
+  box-shadow:
+  0 8px 30px rgba(0,0,0,0.25);
+}
+
+.q-name{
+  font-size:18px;
+  font-weight:600;
+  color:white;
+}
+
+.q-calc{
+  margin-top:8px;
+  font-size:16px;
+  font-weight:600;
+  color:#ffffff;
+
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.12);
+
+  padding:8px 14px;
+  border-radius:14px;
+
+  display:inline-block;
+
+  letter-spacing:0.3px;
+}
+
+.q-price{
+  font-size:28px;
+  font-weight:700;
+  color:#38bdf8;
+}
+
+.total-block{
+  margin-top:25px;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:24px;
+
+  border-radius:24px;
+
+  background:rgba(56,189,248,0.12);
+
+  backdrop-filter:blur(16px);
+
+  border:1px solid rgba(255,255,255,0.1);
+}
+
+.total-label{
+  font-size:15px;
+  color:#cbd5e1;
+}
+
+.total-val{
+  font-size:42px;
+  font-weight:800;
+  color:white;
+}
+
+.call-btn{
+  width:100%;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  margin-top:35px;
+
+  padding:18px;
+
+  border-radius:22px;
+
+  text-decoration:none;
+
+  background:
+  linear-gradient(
+    135deg,
+    #38bdf8,
+    #0ea5e9
+  );
+
+  color:white;
+
+  font-size:18px;
+  font-weight:700;
+
+  transition:0.3s;
+}
+
+.call-btn:hover{
+  transform:translateY(-3px);
+}
+
+@media(max-width:600px){
+
+  .section-intro h2{
+    font-size:38px;
+  }
+
+  .q-item{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:12px;
+  }
+
+  .q-price{
+    font-size:24px;
+  }
+
+  .total-block{
+    flex-direction:column;
+    gap:10px;
+  }
+
+}
+
+</style>
+</head>
+<body>
+
+<section class="quote-table-section">
+
+  <div class="section-intro">
+    <h2>JAYA ELECTRICALS</h2>
+    <p>House Electrical Quotation • 1000 sq.ft.</p>
+  </div>
+
+  <div class="items-wrap">
+
+    <div class="q-item">
+      <div>
+        <div class="q-name">Ceiling Pipe Laying</div>
+        <div class="q-calc">1000 × ₹8 per sq.ft.</div>
+      </div>
+
+      <div class="q-price">₹8,000</div>
+    </div>
+
+    <div class="q-item">
+      <div>
+        <div class="q-name">GI Pulling Work</div>
+        <div class="q-calc">1000 × ₹4 per sq.ft.</div>
+      </div>
+
+      <div class="q-price">₹4,000</div>
+    </div>
+
+    <div class="q-item">
+      <div>
+        <div class="q-name">Wall Chasing Work</div>
+        <div class="q-calc">1000 × ₹14 per sq.ft.</div>
+      </div>
+
+      <div class="q-price">₹14,000</div>
+    </div>
+
+    <div class="q-item">
+      <div>
+        <div class="q-name">Wiring Work</div>
+        <div class="q-calc">1000 × ₹8 per sq.ft.</div>
+      </div>
+
+      <div class="q-price">₹8,000</div>
+    </div>
+
+    <div class="q-item">
+      <div>
+        <div class="q-name">Switch Plate Fixing</div>
+        <div class="q-calc">1000 × ₹7 per sq.ft.</div>
+      </div>
+
+      <div class="q-price">₹7,000</div>
+    </div>
+
+    <div class="q-item">
+      <div>
+        <div class="q-name">Testing Work</div>
+        <div class="q-calc">1000 × ₹4 per sq.ft.</div>
+      </div>
+
+      <div class="q-price">₹4,000</div>
+    </div>
+
+  </div>
+
+  <div class="total-block">
+
+    <div class="total-label">
+      Total Amount
+    </div>
+
+    <div class="total-val">
+      ₹45,000
+    </div>
+
+  </div>
+
+  <a href="tel:7010557047" class="call-btn">
+    ☎ Call Jaya Electricals
+  </a>
+
+</section>
+
+</body>
+</html>
+
